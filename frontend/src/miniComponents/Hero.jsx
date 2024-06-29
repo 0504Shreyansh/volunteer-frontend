@@ -12,9 +12,7 @@ const Hero = () => {
           tenetur laborum incidunt dolore nisi quaerat dicta soluta? Beatae
           aliquid excepturi animi vel, provident nisi dolorem?
         </p>
-        <Link to={"/donate"} className="btn">
-          Donate Now
-        </Link>
+        <Link to={"/donate"} className="btn">Donate Now</Link>
       </div>
       <div className="banner">
         <img src="/hero.png" alt="hero" />

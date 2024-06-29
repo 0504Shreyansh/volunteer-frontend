@@ -18,24 +18,16 @@ const Footer = () => {
         <ul>
           <li>New York, USA</li>
           <li>crypto@gmail.com</li>
-          <li>+92 123123123</li>
+          <li>+91 9876543210</li>
         </ul>
       </div>
       <div>
         <h4>Quick Links</h4>
         <ul>
-          <li>
-            <Link to={"/"}>Home</Link>
-          </li>
-          <li>
-            <Link to={"/donate"}>Donate</Link>
-          </li>
-          <li>
-            <Link to={"/about"}>About</Link>
-          </li>
-          <li>
-            <Link to={"/contact"}>Contact</Link>
-          </li>
+          <li><Link to={"/"}>Home</Link></li>
+          <li><Link to={"/donate"}>Donate</Link></li>
+          <li><Link to={"/about"}>About</Link></li>
+          <li><Link to={"/contact"}>Contact</Link></li>
         </ul>
       </div>
       <div>

@@ -29,15 +29,15 @@ const Qualities = () => {
       <div className="qualities">
         <h2>OUR QUALITIES</h2>
         <div className="container">
-          {qualities.map((elememt) => {
+          {qualities.map((element) => {
             return (
-              <div className="card" key={elememt.id}>
+              <div className="card" key={element.id}>
                 <div className="img-wrapper">
-                  <img src={elememt.image} alt={elememt.title} />
+                  <img src={element.image} alt={element.title} />
                 </div>
                 <div className="content">
-                  <p className="title">{elememt.title}</p>
-                  <p className="description">{elememt.description}</p>
+                  <p className="title">{element.title}</p>
+                  <p className="description">{element.description}</p>
                 </div>
               </div>
             );

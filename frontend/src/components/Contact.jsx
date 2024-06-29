@@ -10,26 +10,26 @@ const Contact = () => {
 
   const handleSendMessage = async (e) => {
     e.preventDefault();
-    await axios
-      .post(
-        "http://localhost:4000/api/v1/message/send",
-        { name, email, phone, message },
-        {
-          withCredentials: true,
-          headers: { "Content-Type": "application/json" },
-        }
-      )
-      .then((res) => {
-        setName("");
-        setEmail("");
-        setPhone("");
-        setMessage("");
-        toast.success(res.data.message);
-      })
-      .catch((error) => {
-        console.error(error);
-        toast.error(error.response.data.message);
-      });
+    // await axios
+    //   .post(
+    //     "http://127.0.0.1:4000/api/v1/message/send",
+    //     { name, email, phone, message },
+    //     {
+    //       withCredentials: true,
+    //       headers: { "Content-Type": "application/json" },
+    //     }
+    //   )
+    //   .then((res) => {
+    //     setName("");
+    //     setEmail("");
+    //     setPhone("");
+    //     setMessage("");
+    //     toast.success(res.data.message);
+    //   })
+    //   .catch((error) => {
+    //     console.error(error);
+    //     toast.error(error.response.data.message);
+    //   });
   };
 
   return (
